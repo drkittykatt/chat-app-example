@@ -22,6 +22,7 @@ export default function LoginScreen({ navigation }) {
                 initialValues={{ username: '', password: '' }}
                 validationSchema={SignupSchema}
                 onSubmit={(values, actions) => {
+                    const vals = { ...values };
                     console.log(values);
                     actions.resetForm();
                     fetch("http://localhost:4000/auth/login", {

@@ -25,7 +25,7 @@ export default function SignUpScreen({ navigation }) {
                     const vals = { ...values }
                     console.log(values);
                     actions.resetForm();
-                    fetch("http://localhost:4000/auth/register", {
+                    fetch("http://localhost:4000/auth/signup", {
                         method: "POST",
                         credentials: "include",
                         headers: {
