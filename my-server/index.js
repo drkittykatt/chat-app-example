@@ -3,7 +3,7 @@ const helmet = require("helmet");
 const { Server } = require("socket.io"); //do i need this? 
 const app = express();
 const cors = require("cors");
-const authRouter = require("./routes/")
+const authRouter = require("./routers/authRouter")
 
 const server = require("http").createServer(app);
 
