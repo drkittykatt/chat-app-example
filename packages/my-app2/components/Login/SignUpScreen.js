@@ -33,7 +33,7 @@ export default function SignUpScreen({ navigation }) {
                         })
                         .then(data => {
                             if (!data) return;
-                            console.log(data);
+                            navigation.navigate('Home')
                         });
                 }}
             >
